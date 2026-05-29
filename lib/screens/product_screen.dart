@@ -1,8 +1,9 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:flutter_second/widgets/button_widget.dart';
-import 'package:flutter_second/widgets/my_drawer_widget.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
+import 'package:flutter_second/widgets/button_widget.dart';
+import 'package:flutter_second/widgets/my_drawer_widget.dart';
 import '../widgets/custom_textform.dart';
 
 class ProductScreen extends StatefulWidget {
@@ -86,7 +87,12 @@ class _ProductScreenState extends State<ProductScreen> {
                     });
                   },
                 ),
-                Text('Accept Terms and Con..'),
+                Text(
+                  'Accept Terms and Con..',
+                  style: Theme.of(
+                    context,
+                  ).textTheme.headlineMedium!.copyWith(color: Colors.purple),
+                ),
               ],
             ),
 
@@ -142,6 +148,13 @@ class _ProductScreenState extends State<ProductScreen> {
               title: "Login",
               icon: MaterialCommunityIcons.star,
               iconColor: Colors.green,
+            ),
+
+            IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(Icons.settings_input_component),
             ),
           ],
         ),

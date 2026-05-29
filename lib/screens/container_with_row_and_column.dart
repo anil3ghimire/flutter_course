@@ -14,7 +14,6 @@ class ContainerWithRowAndColumn extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            // 🔴 Row Example
             Container(
               color: Colors.white,
               height: 150,

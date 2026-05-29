@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_second/screens/e_cart_screen.dart';
 import 'package:flutter_second/screens/home_screen.dart';
 import 'package:flutter_second/screens/login_screen.dart';
 import 'package:flutter_second/screens/product_screen.dart';
@@ -11,7 +12,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  List pages = [HomeScreen(), ProductScreen(), LoginScreen()];
+  List pages = [HomeScreen(), ECartScreen(), LoginScreen()];
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {

@@ -8,7 +8,7 @@ extension FormValidationExtension on String? {
     if (this!.length < 6) {
       return "Please enter at least 6 digit password";
     }
-    
+
     return null;
   }
 

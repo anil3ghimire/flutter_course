@@ -16,11 +16,10 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-       
       keyboardType: inputType,
       decoration: InputDecoration(
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-        label: Text(labelText, style: TextStyle(color: Colors.red)),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(30)),
+        label: Text(labelText, style: TextStyle(color: Colors.black)),
         hint: Text(hintText),
         prefixIcon: Icon(iconData),
       ),

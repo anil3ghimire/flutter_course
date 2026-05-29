@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-import 'package:flutter_second/model/user_info.dart';
+import 'package:flutter_second/models/user_info.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key, required this.userInfo});
@@ -15,7 +15,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text('Register Screen')),
       body: Column(
         children: [
           Text(

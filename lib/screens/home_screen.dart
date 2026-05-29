@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_second/core/app_assets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../widgets/my_drawer_widget.dart';
@@ -52,23 +53,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   CachedNetworkImage(
                     fit: BoxFit.contain,
                     imageUrl: _imageUrl,
-                    placeholder: (context, url) =>
-                        Image.asset('assets/test.jpeg'),
+                    placeholder: (context, url) => Image.asset(AppAssets.test),
                     errorWidget: (context, url, error) =>
-                        Image.asset('assets/test.jpeg'),
+                        Image.asset(AppAssets.test),
                   ),
                   Text(
                     'This is Google Fonts',
-                    style: GoogleFonts.lato(
-                      fontSize: 48,
-                      fontWeight: FontWeight.w700,
-                      fontStyle: FontStyle.normal,
-                    ),
+
+                    style: Theme.of(context).textTheme.headlineLarge,
                   ),
 
                   Text(
                     'This is a google fonts test screen',
-                    style: GoogleFonts.lato(),
+                    style: Theme.of(context).textTheme.headlineSmall,
                   ),
 
                   // SvgPicture.asset('assets/logo.svg'),
